@@ -11,7 +11,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --blue-900: #0D2B4E;
             --blue-800: #0F3460;
@@ -39,7 +38,6 @@
             --orange-600: #D97706;
             --orange-100: #FEF3C7;
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--gray-50);
@@ -47,13 +45,11 @@
             line-height: 1.5;
             font-size: 14px;
         }
-
         /* Layout Principal */
         .app-container {
             display: flex;
             min-height: 100vh;
         }
-
         /* Sidebar */
         .sidebar {
             width: 260px;
@@ -65,18 +61,15 @@
             height: 100vh;
             z-index: 100;
         }
-
         .sidebar-header {
             padding: 20px 24px;
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-
         .logo-container {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .logo-icon {
             width: 40px;
             height: 40px;
@@ -89,35 +82,29 @@
             color: var(--blue-900);
             font-size: 18px;
         }
-
         .logo-text {
             display: flex;
             flex-direction: column;
         }
-
         .logo-title {
             font-weight: 700;
             font-size: 16px;
             letter-spacing: -0.02em;
         }
-
         .logo-subtitle {
             font-size: 11px;
             color: rgba(255,255,255,0.6);
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
-
         .sidebar-nav {
             flex: 1;
             padding: 16px 12px;
             overflow-y: auto;
         }
-
         .nav-section {
             margin-bottom: 24px;
         }
-
         .nav-section-title {
             font-size: 10px;
             text-transform: uppercase;
@@ -127,7 +114,6 @@
             margin-bottom: 8px;
             font-weight: 600;
         }
-
         .nav-item {
             display: flex;
             align-items: center;
@@ -141,17 +127,14 @@
             font-size: 14px;
             font-weight: 500;
         }
-
         .nav-item:hover {
             background: rgba(255,255,255,0.08);
             color: var(--white);
         }
-
         .nav-item.active {
             background: rgba(255,255,255,0.12);
             color: var(--white);
         }
-
         .nav-item.active::before {
             content: '';
             position: absolute;
@@ -161,13 +144,11 @@
             background: var(--yellow-cvc);
             border-radius: 0 2px 2px 0;
         }
-
         .nav-item svg {
             width: 18px;
             height: 18px;
             stroke-width: 1.5;
         }
-
         .nav-badge {
             margin-left: auto;
             background: rgba(255,255,255,0.15);
@@ -176,18 +157,15 @@
             font-size: 11px;
             font-weight: 600;
         }
-
         .sidebar-footer {
             padding: 16px 20px;
             border-top: 1px solid rgba(255,255,255,0.1);
         }
-
         .user-info {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .user-avatar {
             width: 36px;
             height: 36px;
@@ -199,12 +177,10 @@
             font-weight: 600;
             font-size: 14px;
         }
-
         .user-details {
             flex: 1;
             min-width: 0;
         }
-
         .user-name {
             font-weight: 500;
             font-size: 13px;
@@ -212,12 +188,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
         .user-role {
             font-size: 11px;
             color: rgba(255,255,255,0.5);
         }
-
         /* Main Content */
         .main-content {
             flex: 1;
@@ -225,7 +199,6 @@
             display: flex;
             flex-direction: column;
         }
-
         /* Header */
         .top-header {
             background: var(--white);
@@ -238,13 +211,11 @@
             top: 0;
             z-index: 50;
         }
-
         .header-left {
             display: flex;
             align-items: center;
             gap: 24px;
         }
-
         .breadcrumb {
             display: flex;
             align-items: center;
@@ -252,31 +223,25 @@
             font-size: 13px;
             color: var(--gray-500);
         }
-
         .breadcrumb-item {
             color: var(--gray-500);
             text-decoration: none;
         }
-
         .breadcrumb-item:hover {
             color: var(--blue-700);
         }
-
         .breadcrumb-current {
             color: var(--gray-900);
             font-weight: 500;
         }
-
         .breadcrumb-separator {
             color: var(--gray-300);
         }
-
         .header-actions {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         /* Buttons */
         .btn {
             display: inline-flex;
@@ -293,81 +258,65 @@
             text-decoration: none;
             white-space: nowrap;
         }
-
         .btn svg {
             width: 16px;
             height: 16px;
         }
-
         .btn-primary {
             background: var(--blue-900);
             color: var(--white);
         }
-
         .btn-primary:hover {
             background: var(--blue-800);
         }
-
         .btn-secondary {
             background: var(--white);
             color: var(--gray-700);
             border: 1px solid var(--gray-300);
         }
-
         .btn-secondary:hover {
             background: var(--gray-50);
             border-color: var(--gray-400);
         }
-
         .btn-accent {
             background: var(--yellow-cvc);
             color: var(--blue-900);
         }
-
         .btn-accent:hover {
             background: var(--yellow-dark);
         }
-
         .btn-ghost {
             background: transparent;
             color: var(--gray-600);
             padding: 8px;
         }
-
         .btn-ghost:hover {
             background: var(--gray-100);
             color: var(--gray-900);
         }
-
         .btn-danger {
             background: var(--red-600);
             color: var(--white);
         }
-
         .btn-danger:hover {
             background: #B91C1C;
         }
-
         .btn-sm {
             padding: 6px 12px;
             font-size: 12px;
         }
-
         .btn-sm svg {
             width: 14px;
             height: 14px;
         }
-
         /* Page Content */
         .page-content {
             padding: 32px;
             flex: 1;
         }
-
         .page-header {
             margin-bottom: 32px;
         }
-
         .page-title {
             font-size: 24px;
             font-weight: 700;
@@ -375,12 +324,10 @@
             letter-spacing: -0.02em;
             margin-bottom: 4px;
         }
-
         .page-description {
             color: var(--gray-500);
             font-size: 14px;
         }
-
         /* Stats Cards */
         .stats-grid {
             display: grid;
@@ -388,7 +335,6 @@
             gap: 20px;
             margin-bottom: 32px;
         }
-
         .stat-card {
             background: var(--white);
             border: 1px solid var(--gray-200);
@@ -398,13 +344,11 @@
             align-items: flex-start;
             justify-content: space-between;
         }
-
         .stat-content {
             display: flex;
             flex-direction: column;
             gap: 4px;
         }
-
         .stat-label {
             font-size: 12px;
             color: var(--gray-500);
@@ -412,14 +356,12 @@
             letter-spacing: 0.05em;
             font-weight: 500;
         }
-
         .stat-value {
             font-size: 28px;
             font-weight: 700;
             color: var(--blue-900);
             letter-spacing: -0.02em;
         }
-
         .stat-icon {
             width: 44px;
             height: 44px;
@@ -430,12 +372,10 @@
             justify-content: center;
             color: var(--blue-700);
         }
-
         .stat-icon svg {
             width: 22px;
             height: 22px;
         }
-
         /* Search and Filters */
         .search-section {
             background: var(--white);
@@ -444,18 +384,15 @@
             padding: 20px;
             margin-bottom: 24px;
         }
-
         .search-row {
             display: flex;
             gap: 12px;
             margin-bottom: 16px;
         }
-
         .search-input-wrapper {
             flex: 1;
             position: relative;
         }
-
         .search-input-wrapper svg {
             position: absolute;
             left: 14px;
@@ -465,7 +402,6 @@
             height: 18px;
             color: var(--gray-400);
         }
-
         .search-input {
             width: 100%;
             padding: 11px 14px 11px 44px;
@@ -475,24 +411,20 @@
             font-family: inherit;
             transition: all 0.15s ease;
         }
-
         .search-input:focus {
             outline: none;
             border-color: var(--blue-700);
             box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.1);
         }
-
         .search-input::placeholder {
             color: var(--gray-400);
         }
-
         .filters-row {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
             align-items: center;
         }
-
         .filter-select {
             padding: 9px 36px 9px 14px;
             border: 1px solid var(--gray-300);
@@ -507,18 +439,15 @@
             background-position: right 10px center;
             min-width: 160px;
         }
-
         .filter-select:focus {
             outline: none;
             border-color: var(--blue-700);
         }
-
         .active-filters {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
         }
-
         .filter-tag {
             display: inline-flex;
             align-items: center;
@@ -530,18 +459,15 @@
             font-size: 12px;
             color: var(--blue-700);
         }
-
         .filter-tag-remove {
             width: 14px;
             height: 14px;
             cursor: pointer;
             opacity: 0.7;
         }
-
         .filter-tag-remove:hover {
             opacity: 1;
         }
-
         /* Table */
         .table-container {
             background: var(--white);
@@ -549,7 +475,6 @@
             border-radius: 10px;
             overflow: hidden;
         }
-
         .table-header {
             display: flex;
             align-items: center;
@@ -557,31 +482,25 @@
             padding: 16px 20px;
             border-bottom: 1px solid var(--gray-200);
         }
-
         .table-title {
             font-weight: 600;
             color: var(--gray-900);
         }
-
         .table-count {
             color: var(--gray-500);
             font-weight: 400;
         }
-
         .table-actions {
             display: flex;
             gap: 8px;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
         }
-
         thead {
             background: var(--gray-50);
         }
-
         th {
             padding: 12px 16px;
             text-align: left;
@@ -593,63 +512,51 @@
             border-bottom: 1px solid var(--gray-200);
             white-space: nowrap;
         }
-
         th.sortable {
             cursor: pointer;
             user-select: none;
         }
-
         th.sortable:hover {
             color: var(--gray-700);
         }
-
         td {
             padding: 14px 16px;
             border-bottom: 1px solid var(--gray-100);
             font-size: 13px;
             color: var(--gray-700);
         }
-
         tr:hover {
             background: var(--gray-50);
         }
-
         tr:last-child td {
             border-bottom: none;
         }
-
         .supplier-name {
             font-weight: 600;
             color: var(--gray-900);
             cursor: pointer;
         }
-
         .supplier-name:hover {
             color: var(--blue-700);
         }
-
         .supplier-type {
             font-size: 12px;
             color: var(--gray-500);
             margin-top: 2px;
         }
-
         .contact-cell {
             display: flex;
             flex-direction: column;
             gap: 2px;
         }
-
         .contact-name {
             font-weight: 500;
             color: var(--gray-800);
         }
-
         .contact-email {
             font-size: 12px;
             color: var(--gray-500);
         }
-
         /* Status Badges */
         .status-badge {
             display: inline-flex;
@@ -662,57 +569,46 @@
             text-transform: uppercase;
             letter-spacing: 0.03em;
         }
-
         .status-badge::before {
             content: '';
             width: 6px;
             height: 6px;
             border-radius: 50%;
         }
-
         .status-ativo {
             background: var(--green-100);
             color: var(--green-600);
         }
-
         .status-ativo::before {
             background: var(--green-600);
         }
-
         .status-inativo {
             background: var(--gray-100);
             color: var(--gray-600);
         }
-
         .status-inativo::before {
             background: var(--gray-400);
         }
-
         .status-homologacao {
             background: var(--orange-100);
             color: var(--orange-600);
         }
-
         .status-homologacao::before {
             background: var(--orange-600);
         }
-
         .status-pendente {
             background: var(--red-100);
             color: var(--red-600);
         }
-
         .status-pendente::before {
             background: var(--red-600);
         }
-
         /* Tags */
         .tags {
             display: flex;
             gap: 4px;
             flex-wrap: wrap;
         }
-
         .tag {
             padding: 2px 8px;
             background: var(--gray-100);
@@ -720,12 +616,10 @@
             font-size: 11px;
             color: var(--gray-600);
         }
-
         .tag-primary {
             background: var(--blue-50);
             color: var(--blue-700);
         }
-
         /* Table Actions */
         .row-actions {
             display: flex;
@@ -733,11 +627,9 @@
             opacity: 0;
             transition: opacity 0.15s ease;
         }
-
         tr:hover .row-actions {
             opacity: 1;
         }
-
         .row-action-btn {
             width: 32px;
             height: 32px;
@@ -751,17 +643,14 @@
             color: var(--gray-500);
             transition: all 0.15s ease;
         }
-
         .row-action-btn:hover {
             background: var(--gray-100);
             color: var(--gray-700);
         }
-
         .row-action-btn svg {
             width: 16px;
             height: 16px;
         }
-
         /* Pagination */
         .table-footer {
             display: flex;
@@ -771,18 +660,15 @@
             border-top: 1px solid var(--gray-200);
             background: var(--gray-50);
         }
-
         .pagination-info {
             font-size: 13px;
             color: var(--gray-500);
         }
-
         .pagination {
             display: flex;
             align-items: center;
             gap: 4px;
         }
-
         .pagination-btn {
             min-width: 32px;
             height: 32px;
@@ -797,28 +683,23 @@
             color: var(--gray-700);
             transition: all 0.15s ease;
         }
-
         .pagination-btn:hover {
             border-color: var(--gray-300);
             background: var(--gray-50);
         }
-
         .pagination-btn.active {
             background: var(--blue-900);
             border-color: var(--blue-900);
             color: var(--white);
         }
-
         .pagination-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
-
         .pagination-btn svg {
             width: 16px;
             height: 16px;
         }
-
         /* Modal */
         .modal-overlay {
             position: fixed;
@@ -832,12 +713,10 @@
             visibility: hidden;
             transition: all 0.2s ease;
         }
-
         .modal-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-
         .modal {
             background: var(--white);
             border-radius: 12px;
@@ -850,11 +729,9 @@
             transform: translateY(20px);
             transition: transform 0.2s ease;
         }
-
         .modal-overlay.active .modal {
             transform: translateY(0);
         }
-
         .modal-header {
             padding: 20px 24px;
             border-bottom: 1px solid var(--gray-200);
@@ -862,13 +739,11 @@
             align-items: center;
             justify-content: space-between;
         }
-
         .modal-title {
             font-size: 18px;
             font-weight: 600;
             color: var(--gray-900);
         }
-
         .modal-close {
             width: 36px;
             height: 36px;
@@ -882,18 +757,15 @@
             color: var(--gray-500);
             transition: all 0.15s ease;
         }
-
         .modal-close:hover {
             background: var(--gray-100);
             color: var(--gray-700);
         }
-
         .modal-body {
             padding: 24px;
             overflow-y: auto;
             flex: 1;
         }
-
         .modal-footer {
             padding: 16px 24px;
             border-top: 1px solid var(--gray-200);
@@ -902,7 +774,6 @@
             gap: 12px;
             background: var(--gray-50);
         }
-
         /* Supplier Detail View */
         .supplier-detail-header {
             display: flex;
@@ -912,7 +783,6 @@
             padding-bottom: 24px;
             border-bottom: 1px solid var(--gray-200);
         }
-
         .supplier-detail-info h1 {
             font-size: 28px;
             font-weight: 700;
@@ -920,7 +790,6 @@
             margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
-
         .supplier-detail-meta {
             display: flex;
             align-items: center;
@@ -928,32 +797,27 @@
             color: var(--gray-500);
             font-size: 14px;
         }
-
         .supplier-detail-meta span {
             display: flex;
             align-items: center;
             gap: 6px;
         }
-
         .supplier-detail-meta svg {
             width: 16px;
             height: 16px;
         }
-
         /* Info Sections */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
         }
-
         .info-section {
             background: var(--gray-50);
             border: 1px solid var(--gray-200);
             border-radius: 8px;
             padding: 20px;
         }
-
         .info-section-title {
             font-size: 11px;
             font-weight: 600;
@@ -965,46 +829,38 @@
             align-items: center;
             gap: 8px;
         }
-
         .info-section-title svg {
             width: 16px;
             height: 16px;
         }
-
         .info-row {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
             border-bottom: 1px solid var(--gray-200);
         }
-
         .info-row:last-child {
             border-bottom: none;
             padding-bottom: 0;
         }
-
         .info-label {
             font-size: 13px;
             color: var(--gray-500);
         }
-
         .info-value {
             font-size: 13px;
             font-weight: 500;
             color: var(--gray-900);
             text-align: right;
         }
-
         .info-value-link {
             color: var(--blue-700);
             text-decoration: none;
             cursor: pointer;
         }
-
         .info-value-link:hover {
             text-decoration: underline;
         }
-
         .copy-btn {
             display: inline-flex;
             align-items: center;
@@ -1019,20 +875,16 @@
             margin-left: 8px;
             transition: all 0.15s ease;
         }
-
         .copy-btn:hover {
             background: var(--gray-200);
         }
-
         .copy-btn svg {
             width: 12px;
             height: 12px;
         }
-
         .info-section.full-width {
             grid-column: span 2;
         }
-
         /* Contact Card */
         .contact-card {
             display: flex;
@@ -1042,7 +894,6 @@
             border: 1px solid var(--gray-200);
             border-radius: 8px;
         }
-
         .contact-avatar {
             width: 48px;
             height: 48px;
@@ -1056,30 +907,25 @@
             font-size: 16px;
             flex-shrink: 0;
         }
-
         .contact-details {
             flex: 1;
         }
-
         .contact-details h4 {
             font-size: 15px;
             font-weight: 600;
             color: var(--gray-900);
             margin-bottom: 2px;
         }
-
         .contact-details p {
             font-size: 13px;
             color: var(--gray-500);
             margin-bottom: 12px;
         }
-
         .contact-links {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
         }
-
         .contact-link {
             display: inline-flex;
             align-items: center;
@@ -1088,43 +934,35 @@
             color: var(--gray-700);
             text-decoration: none;
         }
-
         .contact-link:hover {
             color: var(--blue-700);
         }
-
         .contact-link svg {
             width: 14px;
             height: 14px;
         }
-
         /* Form */
         .form-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
-
         .form-group {
             display: flex;
             flex-direction: column;
             gap: 6px;
         }
-
         .form-group.full-width {
             grid-column: span 2;
         }
-
         .form-label {
             font-size: 13px;
             font-weight: 500;
             color: var(--gray-700);
         }
-
         .form-label .required {
             color: var(--red-600);
         }
-
         .form-input {
             padding: 10px 14px;
             border: 1px solid var(--gray-300);
@@ -1133,22 +971,18 @@
             font-family: inherit;
             transition: all 0.15s ease;
         }
-
         .form-input:focus {
             outline: none;
             border-color: var(--blue-700);
             box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.1);
         }
-
         .form-input::placeholder {
             color: var(--gray-400);
         }
-
         textarea.form-input {
             resize: vertical;
             min-height: 80px;
         }
-
         .form-select {
             padding: 10px 36px 10px 14px;
             border: 1px solid var(--gray-300);
@@ -1162,20 +996,17 @@
             background-repeat: no-repeat;
             background-position: right 12px center;
         }
-
         .form-select:focus {
             outline: none;
             border-color: var(--blue-700);
             box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.1);
         }
-
         /* Tabs */
         .tabs {
             display: flex;
             border-bottom: 1px solid var(--gray-200);
             margin-bottom: 24px;
         }
-
         .tab {
             padding: 12px 20px;
             font-size: 14px;
@@ -1186,24 +1017,19 @@
             margin-bottom: -1px;
             transition: all 0.15s ease;
         }
-
         .tab:hover {
             color: var(--gray-700);
         }
-
         .tab.active {
             color: var(--blue-900);
             border-bottom-color: var(--blue-900);
         }
-
         .tab-content {
             display: none;
         }
-
         .tab-content.active {
             display: block;
         }
-
         /* Toast */
         .toast-container {
             position: fixed;
@@ -1214,7 +1040,6 @@
             flex-direction: column;
             gap: 8px;
         }
-
         .toast {
             display: flex;
             align-items: center;
@@ -1228,30 +1053,24 @@
             transform: translateX(120%);
             transition: transform 0.3s ease;
         }
-
         .toast.show {
             transform: translateX(0);
         }
-
         .toast.success {
             background: var(--green-600);
         }
-
         .toast.error {
             background: var(--red-600);
         }
-
         .toast svg {
             width: 18px;
             height: 18px;
         }
-
         /* Empty State */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
         }
-
         .empty-state-icon {
             width: 64px;
             height: 64px;
@@ -1263,35 +1082,29 @@
             margin: 0 auto 20px;
             color: var(--gray-400);
         }
-
         .empty-state-icon svg {
             width: 32px;
             height: 32px;
         }
-
         .empty-state h3 {
             font-size: 16px;
             font-weight: 600;
             color: var(--gray-900);
             margin-bottom: 8px;
         }
-
         .empty-state p {
             color: var(--gray-500);
             font-size: 14px;
             max-width: 320px;
             margin: 0 auto;
         }
-
         /* Confirm Dialog */
         .confirm-dialog {
             max-width: 420px;
         }
-
         .confirm-dialog .modal-body {
             text-align: center;
         }
-
         .confirm-icon {
             width: 56px;
             height: 56px;
@@ -1303,24 +1116,20 @@
             margin: 0 auto 20px;
             color: var(--red-600);
         }
-
         .confirm-icon svg {
             width: 28px;
             height: 28px;
         }
-
         .confirm-title {
             font-size: 18px;
             font-weight: 600;
             color: var(--gray-900);
             margin-bottom: 8px;
         }
-
         .confirm-message {
             color: var(--gray-500);
             font-size: 14px;
         }
-
         /* Import Preview */
         .import-preview {
             background: var(--gray-50);
@@ -1329,14 +1138,12 @@
             padding: 20px;
             margin-top: 20px;
         }
-
         .import-stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
             margin-bottom: 20px;
         }
-
         .import-stat {
             text-align: center;
             padding: 16px;
@@ -1344,27 +1151,22 @@
             border-radius: 8px;
             border: 1px solid var(--gray-200);
         }
-
         .import-stat-value {
             font-size: 24px;
             font-weight: 700;
             color: var(--blue-900);
         }
-
         .import-stat-label {
             font-size: 12px;
             color: var(--gray-500);
             margin-top: 4px;
         }
-
         .import-stat.warning .import-stat-value {
             color: var(--orange-600);
         }
-
         .import-stat.error .import-stat-value {
             color: var(--red-600);
         }
-
         /* File Upload */
         .file-upload {
             border: 2px dashed var(--gray-300);
@@ -1374,17 +1176,14 @@
             cursor: pointer;
             transition: all 0.15s ease;
         }
-
         .file-upload:hover {
             border-color: var(--blue-700);
             background: var(--blue-50);
         }
-
         .file-upload.dragover {
             border-color: var(--blue-700);
             background: var(--blue-50);
         }
-
         .file-upload-icon {
             width: 48px;
             height: 48px;
@@ -1396,39 +1195,32 @@
             margin: 0 auto 16px;
             color: var(--gray-500);
         }
-
         .file-upload-icon svg {
             width: 24px;
             height: 24px;
         }
-
         .file-upload h4 {
             font-size: 15px;
             font-weight: 600;
             color: var(--gray-900);
             margin-bottom: 4px;
         }
-
         .file-upload p {
             font-size: 13px;
             color: var(--gray-500);
         }
-
         .file-upload input {
             display: none;
         }
-
         /* ============================================ */
         /* AI ASSISTANT FLOATING BUTTON */
         /* ============================================ */
-
         .ai-assistant-wrapper {
             position: fixed;
             bottom: 24px;
             right: 24px;
             z-index: 999;
         }
-
         /* Floating Button */
         .ai-assistant-btn {
             width: 60px;
@@ -1445,7 +1237,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .ai-assistant-btn::before {
             content: '';
             position: absolute;
@@ -1455,20 +1246,16 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .ai-assistant-btn:hover {
             transform: scale(1.08);
             box-shadow: 0 6px 30px rgba(13, 43, 78, 0.5);
         }
-
         .ai-assistant-btn:hover::before {
             opacity: 1;
         }
-
         .ai-assistant-btn:active {
             transform: scale(0.95);
         }
-
         .ai-assistant-btn svg {
             width: 28px;
             height: 28px;
@@ -1477,23 +1264,18 @@
             z-index: 1;
             transition: all 0.3s ease;
         }
-
         .ai-assistant-btn:hover svg {
             color: var(--blue-900);
         }
-
         .ai-assistant-btn .icon-close {
             display: none;
         }
-
         .ai-assistant-btn.active .icon-chat {
             display: none;
         }
-
         .ai-assistant-btn.active .icon-close {
             display: block;
         }
-
         /* Pulse Animation */
         .ai-assistant-btn::after {
             content: '';
@@ -1504,7 +1286,6 @@
             opacity: 0;
             animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
-
         @keyframes pulse-ring {
             0% {
                 transform: scale(1);
@@ -1518,12 +1299,10 @@
                 opacity: 0;
             }
         }
-
         .ai-assistant-btn:hover::after {
             animation: none;
             opacity: 0;
         }
-
         /* Tooltip */
         .ai-assistant-tooltip {
             position: absolute;
@@ -1542,7 +1321,6 @@
             transition: all 0.2s ease;
             pointer-events: none;
         }
-
         .ai-assistant-tooltip::after {
             content: '';
             position: absolute;
@@ -1552,17 +1330,14 @@
             border: 6px solid transparent;
             border-left-color: var(--gray-900);
         }
-
         .ai-assistant-btn:hover + .ai-assistant-tooltip {
             opacity: 1;
             visibility: visible;
         }
-
         .ai-assistant-btn.active + .ai-assistant-tooltip {
             opacity: 0;
             visibility: hidden;
         }
-
         /* Chat Panel */
         .ai-assistant-panel {
             position: absolute;
@@ -1582,13 +1357,11 @@
             display: flex;
             flex-direction: column;
         }
-
         .ai-assistant-panel.active {
             opacity: 1;
             visibility: visible;
             transform: translateY(0) scale(1);
         }
-
         /* Panel Header */
         .ai-panel-header {
             background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 100%);
@@ -1598,7 +1371,6 @@
             gap: 12px;
             flex-shrink: 0;
         }
-
         .ai-panel-avatar {
             width: 40px;
             height: 40px;
@@ -1608,28 +1380,23 @@
             align-items: center;
             justify-content: center;
         }
-
         .ai-panel-avatar svg {
             width: 22px;
             height: 22px;
             color: var(--yellow-cvc);
         }
-
         .ai-panel-info {
             flex: 1;
         }
-
         .ai-panel-title {
             font-size: 15px;
             font-weight: 600;
             color: var(--white);
         }
-
         .ai-panel-subtitle {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
         }
-
         .ai-panel-status {
             display: flex;
             align-items: center;
@@ -1637,7 +1404,6 @@
             font-size: 11px;
             color: rgba(255, 255, 255, 0.7);
         }
-
         .ai-panel-status::before {
             content: '';
             width: 8px;
@@ -1646,25 +1412,21 @@
             border-radius: 50%;
             animation: status-pulse 2s ease-in-out infinite;
         }
-
         @keyframes status-pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
-
         /* Panel Body (iframe container) */
         .ai-panel-body {
             flex: 1;
             position: relative;
             background: var(--gray-50);
         }
-
         .ai-panel-body iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
-
         /* Loading State */
         .ai-panel-loading {
             position: absolute;
@@ -1678,12 +1440,10 @@
             z-index: 10;
             transition: opacity 0.3s ease;
         }
-
         .ai-panel-loading.hidden {
             opacity: 0;
             pointer-events: none;
         }
-
         .ai-loading-spinner {
             width: 40px;
             height: 40px;
@@ -1692,16 +1452,13 @@
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
         }
-
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-
         .ai-panel-loading p {
             font-size: 14px;
             color: var(--gray-500);
         }
-
         /* Panel Footer */
         .ai-panel-footer {
             padding: 12px 16px;
@@ -1713,18 +1470,15 @@
             gap: 8px;
             flex-shrink: 0;
         }
-
         .ai-panel-footer span {
             font-size: 11px;
             color: var(--gray-400);
         }
-
         .ai-panel-footer svg {
             width: 14px;
             height: 14px;
             color: var(--gray-400);
         }
-
         /* Badge notification */
         .ai-assistant-badge {
             position: absolute;
@@ -1743,16 +1497,13 @@
             border: 2px solid var(--white);
             animation: badge-bounce 2s ease-in-out infinite;
         }
-
         @keyframes badge-bounce {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
         }
-
         .ai-assistant-btn.active .ai-assistant-badge {
             display: none;
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .ai-assistant-panel {
@@ -1762,78 +1513,83 @@
                 bottom: 72px;
             }
         }
-
         /* Utilities */
         .hidden {
             display: none !important;
         }
-
         .text-muted {
             color: var(--gray-500);
         }
-
         .text-sm {
             font-size: 12px;
         }
-
         .mt-4 {
             margin-top: 16px;
         }
-
         .mb-4 {
             margin-bottom: 16px;
         }
-
         /* Responsive */
         @media (max-width: 1200px) {
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
         @media (max-width: 992px) {
             .sidebar {
                 transform: translateX(-100%);
             }
-
             .sidebar.open {
                 transform: translateX(0);
             }
-
             .main-content {
                 margin-left: 0;
             }
-
             .info-grid {
                 grid-template-columns: 1fr;
             }
-
             .info-section.full-width {
                 grid-column: span 1;
             }
         }
-
         @media (max-width: 768px) {
             .stats-grid {
                 grid-template-columns: 1fr;
             }
-
             .form-grid {
                 grid-template-columns: 1fr;
             }
-
             .form-group.full-width {
                 grid-column: span 1;
             }
-
             .filters-row {
                 flex-direction: column;
                 align-items: stretch;
             }
-
             .filter-select {
                 width: 100%;
             }
+        }
+        
+        /* ⭐ NOVO - Indicador de dados salvos */
+        .save-indicator {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            background: var(--green-600);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .save-indicator.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -1850,7 +1606,6 @@
                     </div>
                 </div>
             </div>
-
             <nav class="sidebar-nav">
                 <div class="nav-section">
                     <div class="nav-section-title">Principal</div>
@@ -1868,7 +1623,6 @@
                         <span>Destinos</span>
                     </a>
                 </div>
-
                 <div class="nav-section">
                     <div class="nav-section-title">Administração</div>
                     <a href="#" class="nav-item" data-page="admin">
@@ -1889,7 +1643,6 @@
                     </a>
                 </div>
             </nav>
-
             <div class="sidebar-footer">
                 <div class="user-info">
                     <div class="user-avatar">AD</div>
@@ -1900,7 +1653,6 @@
                 </div>
             </div>
         </aside>
-
         <!-- Main Content -->
         <main class="main-content">
             <!-- Top Header -->
@@ -1926,7 +1678,6 @@
                     </button>
                 </div>
             </header>
-
             <!-- Page Content -->
             <div class="page-content">
                 <!-- Home Page -->
@@ -1935,7 +1686,6 @@
                         <h1 class="page-title">Portal de Receptivos & DMCs</h1>
                         <p class="page-description">Consulte informações operacionais e contatos dos fornecedores internacionais.</p>
                     </div>
-
                     <!-- Stats -->
                     <div class="stats-grid">
                         <div class="stat-card">
@@ -1975,7 +1725,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Quick Search -->
                     <div class="search-section">
                         <div class="search-row">
@@ -1986,7 +1735,6 @@
                             <button class="btn btn-primary" id="homeSearchBtn">Buscar</button>
                         </div>
                     </div>
-
                     <!-- Recent Suppliers -->
                     <div class="table-container">
                         <div class="table-header">
@@ -2010,14 +1758,12 @@
                         </table>
                     </div>
                 </div>
-
                 <!-- Suppliers Page -->
                 <div id="page-suppliers" class="page-section hidden">
                     <div class="page-header">
                         <h1 class="page-title">Fornecedores</h1>
                         <p class="page-description">Gerencie e consulte todos os receptivos e DMCs internacionais.</p>
                     </div>
-
                     <!-- Search and Filters -->
                     <div class="search-section">
                         <div class="search-row">
@@ -2053,7 +1799,6 @@
                         </div>
                         <div class="active-filters" id="activeFilters"></div>
                     </div>
-
                     <!-- Suppliers Table -->
                     <div class="table-container">
                         <div class="table-header">
@@ -2092,14 +1837,12 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Destinations Page -->
                 <div id="page-destinations" class="page-section hidden">
                     <div class="page-header">
                         <h1 class="page-title">Destinos</h1>
                         <p class="page-description">Visualize fornecedores por destino e região.</p>
                     </div>
-
                     <div class="search-section">
                         <div class="search-row">
                             <div class="search-input-wrapper">
@@ -2109,7 +1852,6 @@
                             <button class="btn btn-primary" id="destinationSearchBtn">Buscar</button>
                         </div>
                     </div>
-
                     <div class="table-container">
                         <div class="table-header">
                             <h3 class="table-title">Destinos <span class="table-count" id="destinationCount">(156)</span></h3>
@@ -2129,14 +1871,12 @@
                         </table>
                     </div>
                 </div>
-
                 <!-- History Page -->
                 <div id="page-history" class="page-section hidden">
                     <div class="page-header">
                         <h1 class="page-title">Histórico de Alterações</h1>
                         <p class="page-description">Acompanhe todas as modificações realizadas na base de dados.</p>
                     </div>
-
                     <div class="table-container">
                         <div class="table-header">
                             <h3 class="table-title">Alterações Recentes</h3>
@@ -2158,14 +1898,12 @@
                         </table>
                     </div>
                 </div>
-
                 <!-- Admin Page -->
                 <div id="page-admin" class="page-section hidden">
                     <div class="page-header">
                         <h1 class="page-title">Configurações</h1>
                         <p class="page-description">Gerencie as configurações do portal.</p>
                     </div>
-
                     <div class="info-grid">
                         <div class="info-section">
                             <div class="info-section-title">
@@ -2189,12 +1927,39 @@
                                 Exportar Dados
                             </button>
                         </div>
+                        <!-- ⭐ NOVO - Botão para resetar dados -->
+                        <div class="info-section">
+                            <div class="info-section-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                                Resetar Dados
+                            </div>
+                            <p class="text-muted text-sm mb-4">Limpa os dados salvos localmente e restaura os dados padrão.</p>
+                            <button class="btn btn-danger" id="resetDataBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                Resetar para Padrão
+                            </button>
+                        </div>
+                        <!-- ⭐ NOVO - Info sobre armazenamento -->
+                        <div class="info-section">
+                            <div class="info-section-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                                Armazenamento Local
+                            </div>
+                            <p class="text-muted text-sm mb-4">Os dados são salvos automaticamente no seu navegador.</p>
+                            <div class="info-row">
+                                <span class="info-label">Status</span>
+                                <span class="info-value"><span class="tag tag-primary" id="storageStatus">Ativo</span></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Registros salvos</span>
+                                <span class="info-value" id="storageCount">0</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <!-- ============================================ -->
     <!-- AI ASSISTANT FLOATING BUTTON & PANEL -->
     <!-- ============================================ -->
@@ -2216,7 +1981,7 @@
                     <div class="ai-loading-spinner"></div>
                     <p>Carregando assistente...</p>
                 </div>
-                <iframe 
+                <iframe
                     id="aiAssistantIframe"
                     src="https://ia.cvc.com.br/agent/share?shared_id=114a13136b5811f1bf5efe948e3efd29&from=agent&auth=LECI5dUtix06KcTgLHXcru4cb2wuFMkZ&theme=light"
                     title="Assistente IA CVC Corp"
@@ -2227,7 +1992,6 @@
                 <span>Conexão segura CVC Corp</span>
             </div>
         </div>
-
         <!-- Floating Button -->
         <button class="ai-assistant-btn" id="aiAssistantBtn" aria-label="Abrir assistente IA">
             <svg class="icon-chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
@@ -2236,7 +2000,10 @@
         </button>
         <div class="ai-assistant-tooltip">Assistente IA</div>
     </div>
-
+    
+    <!-- ⭐ NOVO - Indicador de salvamento -->
+    <div class="save-indicator" id="saveIndicator">✓ Dados salvos</div>
+    
     <!-- View Supplier Modal -->
     <div class="modal-overlay" id="viewSupplierModal">
         <div class="modal" style="max-width: 1000px;">
@@ -2258,7 +2025,6 @@
             </div>
         </div>
     </div>
-
     <!-- Add/Edit Supplier Modal -->
     <div class="modal-overlay" id="supplierModal">
         <div class="modal" style="max-width: 800px;">
@@ -2271,7 +2037,6 @@
             <div class="modal-body">
                 <form id="supplierForm">
                     <input type="hidden" id="supplierId">
-                    
                     <!-- Tabs -->
                     <div class="tabs">
                         <div class="tab active" data-tab="identification">Identificação</div>
@@ -2280,7 +2045,6 @@
                         <div class="tab" data-tab="operations">Operação</div>
                         <div class="tab" data-tab="commercial">Comercial</div>
                     </div>
-
                     <!-- Identification Tab -->
                     <div class="tab-content active" id="tab-identification">
                         <div class="form-grid">
@@ -2336,7 +2100,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Contact Tab -->
                     <div class="tab-content" id="tab-contact">
                         <div class="form-grid">
@@ -2386,7 +2149,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Services Tab -->
                     <div class="tab-content" id="tab-services">
                         <div class="form-grid">
@@ -2420,7 +2182,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Operations Tab -->
                     <div class="tab-content" id="tab-operations">
                         <div class="form-grid">
@@ -2454,7 +2215,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Commercial Tab -->
                     <div class="tab-content" id="tab-commercial">
                         <div class="form-grid">
@@ -2499,7 +2259,6 @@
             </div>
         </div>
     </div>
-
     <!-- Import Modal -->
     <div class="modal-overlay" id="importModal">
         <div class="modal" style="max-width: 700px;">
@@ -2518,7 +2277,6 @@
                     <h4>Arraste um arquivo ou clique para selecionar</h4>
                     <p>Formatos aceitos: CSV, XLSX, XLS</p>
                 </div>
-
                 <div class="import-preview hidden" id="importPreview">
                     <h4 style="margin-bottom: 16px; font-weight: 600;">Preview da Importação</h4>
                     <div class="import-stats">
@@ -2551,7 +2309,6 @@
             </div>
         </div>
     </div>
-
     <!-- Confirm Delete Modal -->
     <div class="modal-overlay" id="confirmDeleteModal">
         <div class="modal confirm-dialog">
@@ -2571,540 +2328,635 @@
             </div>
         </div>
     </div>
-
     <!-- Toast Container -->
     <div class="toast-container" id="toastContainer"></div>
-
     <script>
         // ============================================
-        // DATA STORE
+        // ⭐ NOVO - PERSISTÊNCIA DE DADOS (LocalStorage)
         // ============================================
-        
-        // Sample data based on the CSV structure described
-        let suppliers = [
-            {
-                id: 1,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'Folia Travel',
-                razaoSocial: 'Folia Travel Turismo Ltda',
-                country: 'Argentina',
-                cities: 'Buenos Aires, Mendoza, Bariloche',
-                region: 'América do Sul',
-                language: 'Espanhol',
-                additionalLanguages: 'Português, Inglês',
-                timezone: 'UTC-3',
-                website: 'https://www.foliatravel.com.ar',
-                status: 'Ativo',
-                inclusionDate: '2023-01-15',
-                contactName: 'María García',
-                contactRole: 'Gerente Operacional',
-                email: 'operaciones@foliatravel.com.ar',
-                phone: '+54 11 4567-8901',
-                hours: '09:00 - 18:00',
-                is24h: 'Sim',
-                emergencyContact: '+54 11 9999-8888',
-                preferredContact: 'WhatsApp',
-                responseTime: '2 horas',
-                operationalNotes: 'Atendimento prioritário para grupos CVC',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher eletrônico CVC',
-                requiresDocument: 'Não',
-                documentType: '',
-                serviceType: 'Receptivo Terrestre',
-                mainServices: 'Transfer, City Tour, Excursões',
-                complementaryServices: 'Guia multilíngue, Assistência 24h',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: 'Sem custo até 48h antes',
-                noShowPolicy: '100% de cobrança',
-                changesPolicy: 'Alterações gratuitas até 24h antes',
-                childrenRules: 'CHD até 5 anos gratuito',
-                tariffModel: 'Net',
-                currency: 'USD',
-                paymentMethod: 'Faturamento 30 dias',
-                billingTerm: '30 dias',
-                responsible: 'João Silva',
-                area: 'Produtos Internacionais',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.5',
-                lastReview: '2024-11-01'
-            },
-            {
-                id: 2,
-                torre: 'Internacional',
-                type: 'DMC',
-                name: 'Peru Destinations',
-                razaoSocial: 'Peru Destinations SAC',
-                country: 'Peru',
-                cities: 'Lima, Cusco, Machu Picchu',
-                region: 'América do Sul',
-                language: 'Espanhol',
-                additionalLanguages: 'Inglês, Português',
-                timezone: 'UTC-5',
-                website: 'https://www.perudestinations.com',
-                status: 'Ativo',
-                inclusionDate: '2022-06-20',
-                contactName: 'Carlos Mendoza',
-                contactRole: 'Diretor de Operações',
-                email: 'carlos@perudestinations.com',
-                phone: '+51 1 234-5678',
-                hours: '08:00 - 17:00',
-                is24h: 'Sim',
-                emergencyContact: '+51 999-888-777',
-                preferredContact: 'E-mail',
-                responseTime: '4 horas',
-                operationalNotes: '',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher CVC',
-                requiresDocument: 'Sim',
-                documentType: 'Lista de passageiros',
-                serviceType: 'DMC Full Service',
-                mainServices: 'Pacotes completos, Transfer, Hotéis, Excursões',
-                complementaryServices: 'Trem para Machu Picchu, Guias especializados',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: 'Sem custo até 72h antes',
-                noShowPolicy: '100% de cobrança',
-                changesPolicy: 'Sujeito a disponibilidade',
-                childrenRules: 'CHD até 2 anos gratuito',
-                tariffModel: 'Comissionado',
-                currency: 'USD',
-                paymentMethod: 'Faturamento',
-                billingTerm: '45 dias',
-                responsible: 'Ana Costa',
-                area: 'Produtos Internacionais',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.8',
-                lastReview: '2024-10-15'
-            },
-            {
-                id: 3,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'Chile Tours',
-                razaoSocial: 'Chile Tours SpA',
-                country: 'Chile',
-                cities: 'Santiago, Valparaíso, Atacama',
-                region: 'América do Sul',
-                language: 'Espanhol',
-                additionalLanguages: 'Inglês',
-                timezone: 'UTC-4',
-                website: 'https://www.chiletours.cl',
-                status: 'Ativo',
-                inclusionDate: '2023-03-10',
-                contactName: 'Patricia Morales',
-                contactRole: 'Coordenadora',
-                email: 'reservas@chiletours.cl',
-                phone: '+56 2 2345-6789',
-                hours: '09:00 - 18:00',
-                is24h: 'Não',
-                emergencyContact: '+56 9 8765-4321',
-                preferredContact: 'E-mail',
-                responseTime: '6 horas',
-                operationalNotes: '',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher eletrônico',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Tours',
-                complementaryServices: '',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: 'Sem custo até 24h antes',
-                noShowPolicy: '50% de cobrança',
-                changesPolicy: 'Gratuito',
-                tariffModel: 'Net',
-                currency: 'USD',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: 'Pedro Santos',
-                area: 'Produtos Internacionais',
-                criticality: 'Média',
-                hasProblems: 'Não',
-                rating: '4.2',
-                lastReview: '2024-09-20'
-            },
-            {
-                id: 4,
-                torre: 'Internacional',
-                type: 'DMC',
-                name: 'European Destinations',
-                razaoSocial: 'European Destinations GmbH',
-                country: 'Alemanha',
-                cities: 'Berlim, Munique, Frankfurt',
-                region: 'Europa',
-                language: 'Alemão',
-                additionalLanguages: 'Inglês, Português',
-                timezone: 'UTC+1',
-                website: 'https://www.europeandest.de',
-                status: 'Ativo',
-                inclusionDate: '2022-01-05',
-                contactName: 'Hans Mueller',
-                contactRole: 'Operations Manager',
-                email: 'operations@europeandest.de',
-                phone: '+49 30 1234567',
-                hours: '08:00 - 17:00',
-                is24h: 'Sim',
-                emergencyContact: '+49 170 9876543',
-                preferredContact: 'E-mail',
-                responseTime: '24 horas',
-                operationalNotes: 'Feriados alemães: escritório fechado',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher CVC',
-                serviceType: 'DMC',
-                mainServices: 'Pacotes, Transfer, Hotéis',
-                complementaryServices: 'City tours, Guias',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: 'Conforme política hoteleira',
-                noShowPolicy: '100% primeira noite',
-                tariffModel: 'Net',
-                currency: 'EUR',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: 'Mariana Lima',
-                area: 'Produtos Europa',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.6',
-                lastReview: '2024-11-10'
-            },
-            {
-                id: 5,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'USA Travel Services',
-                razaoSocial: 'USA Travel Services Inc',
-                country: 'Estados Unidos',
-                cities: 'Nova York, Miami, Orlando, Los Angeles',
-                region: 'América do Norte',
-                language: 'Inglês',
-                additionalLanguages: 'Espanhol, Português',
-                timezone: 'UTC-5',
-                website: 'https://www.usatravelservices.com',
-                status: 'Ativo',
-                inclusionDate: '2021-08-15',
-                contactName: 'John Smith',
-                contactRole: 'Director',
-                email: 'john@usatravelservices.com',
-                phone: '+1 305 123-4567',
-                hours: '09:00 - 18:00 EST',
-                is24h: 'Sim',
-                emergencyContact: '+1 305 999-8888',
-                preferredContact: 'WhatsApp',
-                responseTime: '2 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher eletrônico',
-                serviceType: 'Receptivo Terrestre',
-                mainServices: 'Transfer, Ingressos, Tours',
-                complementaryServices: 'VIP Services',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: '48h sem custo',
-                noShowPolicy: '100%',
-                tariffModel: 'Net',
-                currency: 'USD',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: 'Roberto Alves',
-                area: 'Produtos Américas',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.7',
-                lastReview: '2024-10-01'
-            },
-            {
-                id: 6,
-                torre: 'Internacional',
-                type: 'Operador Local',
-                name: 'Mexico Adventures',
-                razaoSocial: 'Mexico Adventures SA de CV',
-                country: 'México',
-                cities: 'Cancún, Cidade do México, Playa del Carmen',
-                region: 'América Central',
-                language: 'Espanhol',
-                additionalLanguages: 'Inglês',
-                timezone: 'UTC-6',
-                website: 'https://www.mexicoadventures.mx',
-                status: 'Ativo',
-                inclusionDate: '2023-05-20',
-                contactName: 'Roberto Hernández',
-                contactRole: 'Gerente',
-                email: 'reservas@mexicoadventures.mx',
-                phone: '+52 998 123-4567',
-                hours: '08:00 - 20:00',
-                is24h: 'Não',
-                emergencyContact: '+52 998 999-1234',
-                preferredContact: 'WhatsApp',
-                responseTime: '4 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher CVC',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Excursões, Parques',
-                complementaryServices: 'Mergulho, Snorkel',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: '24h sem custo',
-                noShowPolicy: '100%',
-                tariffModel: 'Net',
-                currency: 'USD',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: 'Carla Mendes',
-                area: 'Produtos Américas',
-                criticality: 'Média',
-                hasProblems: 'Não',
-                rating: '4.3',
-                lastReview: '2024-08-15'
-            },
-            {
-                id: 7,
-                torre: 'Internacional',
-                type: 'DMC',
-                name: 'Spain Incoming',
-                razaoSocial: 'Spain Incoming SL',
-                country: 'Espanha',
-                cities: 'Madrid, Barcelona, Sevilha',
-                region: 'Europa',
-                language: 'Espanhol',
-                additionalLanguages: 'Inglês, Português',
-                timezone: 'UTC+1',
-                website: 'https://www.spainincoming.es',
-                status: 'Em homologação',
-                inclusionDate: '2024-09-01',
-                contactName: 'Carmen López',
-                contactRole: 'Diretora Comercial',
-                email: 'carmen@spainincoming.es',
-                phone: '+34 91 234-5678',
-                hours: '09:00 - 18:00',
-                is24h: 'Não',
-                emergencyContact: '+34 600 123-456',
-                preferredContact: 'E-mail',
-                responseTime: '8 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'A definir',
-                serviceType: 'DMC',
-                mainServices: 'Pacotes, Transfer, Hotéis',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: 'Em definição',
-                tariffModel: 'Net',
-                currency: 'EUR',
-                paymentMethod: 'A definir',
-                billingTerm: '',
-                responsible: 'Fernanda Souza',
-                area: 'Produtos Europa',
-                criticality: 'Média',
-                hasProblems: 'Não',
-                rating: '',
-                lastReview: '2024-11-15'
-            },
-            {
-                id: 8,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'Portugal Incoming',
-                razaoSocial: 'Portugal Incoming Lda',
-                country: 'Portugal',
-                cities: 'Lisboa, Porto, Algarve',
-                region: 'Europa',
-                language: 'Português',
-                additionalLanguages: 'Inglês, Espanhol',
-                timezone: 'UTC+0',
-                website: 'https://www.portugalincoming.pt',
-                status: 'Ativo',
-                inclusionDate: '2022-11-10',
-                contactName: 'António Silva',
-                contactRole: 'Diretor Geral',
-                email: 'antonio@portugalincoming.pt',
-                phone: '+351 21 123-4567',
-                hours: '09:00 - 18:00',
-                is24h: 'Sim',
-                emergencyContact: '+351 91 999-8888',
-                preferredContact: 'WhatsApp',
-                responseTime: '4 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher CVC',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Tours, Passeios',
-                complementaryServices: 'Vinhos, Gastronomia',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: '48h sem custo',
-                noShowPolicy: '100%',
-                tariffModel: 'Net',
-                currency: 'EUR',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: 'Lucas Oliveira',
-                area: 'Produtos Europa',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.9',
-                lastReview: '2024-10-20'
-            },
-            {
-                id: 9,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'Italy Tours',
-                razaoSocial: 'Italy Tours SRL',
-                country: 'Itália',
-                cities: 'Roma, Florença, Veneza, Milão',
-                region: 'Europa',
-                language: 'Italiano',
-                additionalLanguages: 'Inglês',
-                timezone: 'UTC+1',
-                website: 'https://www.italytours.it',
-                status: 'Ativo',
-                inclusionDate: '2021-04-15',
-                contactName: 'Marco Rossi',
-                contactRole: 'Operations Manager',
-                email: 'marco@italytours.it',
-                phone: '+39 06 1234567',
-                hours: '09:00 - 18:00',
-                is24h: 'Não',
-                emergencyContact: '+39 333 1234567',
-                preferredContact: 'E-mail',
-                responseTime: '6 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher eletrônico',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Tours, Ingressos',
-                complementaryServices: 'Guias em português',
-                handlesGroups: 'Sim',
-                handlesFIT: 'Sim',
-                cancellationPolicy: '72h sem custo',
-                noShowPolicy: '100%',
-                tariffModel: 'Net',
-                currency: 'EUR',
-                paymentMethod: 'Faturamento',
-                billingTerm: '45 dias',
-                responsible: 'Mariana Lima',
-                area: 'Produtos Europa',
-                criticality: 'Alta',
-                hasProblems: 'Não',
-                rating: '4.4',
-                lastReview: '2024-09-10'
-            },
-            {
-                id: 10,
-                torre: 'Internacional',
-                type: 'Receptivo',
-                name: 'France Voyages',
-                razaoSocial: 'France Voyages SARL',
-                country: 'França',
-                cities: 'Paris, Nice, Lyon',
-                region: 'Europa',
-                language: 'Francês',
-                additionalLanguages: 'Inglês, Português',
-                timezone: 'UTC+1',
-                website: 'https://www.francevoyages.fr',
-                status: 'Inativo',
-                inclusionDate: '2020-06-01',
-                contactName: 'Pierre Dupont',
-                contactRole: 'Diretor',
-                email: 'pierre@francevoyages.fr',
-                phone: '+33 1 23456789',
-                hours: '10:00 - 18:00',
-                is24h: 'Não',
-                emergencyContact: '',
-                preferredContact: 'E-mail',
-                responseTime: '24 horas',
-                voucherAccepted: 'Sim',
-                voucherType: 'Voucher CVC',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Tours',
-                handlesGroups: 'Não',
-                handlesFIT: 'Sim',
-                cancellationPolicy: '48h',
-                tariffModel: 'Net',
-                currency: 'EUR',
-                paymentMethod: 'Pré-pagamento',
-                billingTerm: '',
-                responsible: 'Mariana Lima',
-                area: 'Produtos Europa',
-                criticality: 'Baixa',
-                hasProblems: 'Sim',
-                rating: '3.2',
-                lastReview: '2024-06-01'
+        const STORAGE_KEY = 'cvc_receptivos_suppliers';
+        const HISTORY_KEY = 'cvc_receptivos_history';
+
+        // Função para salvar dados no localStorage
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(suppliers));
+                localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+                console.log('✓ Dados salvos no localStorage:', suppliers.length, 'fornecedores');
+                
+                // Mostra indicador visual de salvamento
+                showSaveIndicator();
+                
+                // Atualiza contador na página de admin
+                updateStorageInfo();
+                
+                return true;
+            } catch (e) {
+                console.error('Erro ao salvar dados:', e);
+                showToast('Erro ao salvar dados localmente', 'error');
+                return false;
             }
-        ];
-
-        // Add more sample suppliers to reach 292
-        const countries = ['Colômbia', 'Uruguai', 'Equador', 'Bolívia', 'Paraguai', 'Inglaterra', 'Irlanda', 'Holanda', 'Bélgica', 'Suíça', 'Áustria', 'Grécia', 'Turquia', 'Egito', 'África do Sul', 'Marrocos', 'Israel', 'Emirados Árabes', 'Tailândia', 'Japão', 'China', 'Austrália', 'Nova Zelândia', 'Canadá', 'Cuba', 'República Dominicana', 'Costa Rica', 'Panamá'];
-        const types = ['Receptivo', 'DMC', 'Operador Local'];
-        const statuses = ['Ativo', 'Ativo', 'Ativo', 'Ativo', 'Inativo', 'Em homologação', 'Pendente'];
-
-        for (let i = 11; i <= 292; i++) {
-            const country = countries[Math.floor(Math.random() * countries.length)];
-            suppliers.push({
-                id: i,
-                torre: 'Internacional',
-                type: types[Math.floor(Math.random() * types.length)],
-                name: `Fornecedor ${country} ${i}`,
-                razaoSocial: `Empresa ${country} ${i} Ltda`,
-                country: country,
-                cities: `Cidade Principal, Cidade Secundária`,
-                region: country.includes('Europa') ? 'Europa' : 'Outras Regiões',
-                language: 'Local',
-                timezone: 'UTC',
-                website: `https://www.fornecedor${i}.com`,
-                status: statuses[Math.floor(Math.random() * statuses.length)],
-                inclusionDate: '2023-01-01',
-                contactName: `Contato ${i}`,
-                contactRole: 'Gerente',
-                email: `contato@fornecedor${i}.com`,
-                phone: `+00 00 0000-0000`,
-                hours: '09:00 - 18:00',
-                is24h: Math.random() > 0.5 ? 'Sim' : 'Não',
-                emergencyContact: Math.random() > 0.5 ? '+00 00 9999-9999' : '',
-                preferredContact: ['E-mail', 'WhatsApp', 'Telefone'][Math.floor(Math.random() * 3)],
-                responseTime: '24 horas',
-                voucherAccepted: 'Sim',
-                serviceType: 'Receptivo',
-                mainServices: 'Transfer, Tours',
-                handlesGroups: Math.random() > 0.3 ? 'Sim' : 'Não',
-                handlesFIT: Math.random() > 0.2 ? 'Sim' : 'Não',
-                tariffModel: 'Net',
-                currency: 'USD',
-                paymentMethod: 'Faturamento',
-                billingTerm: '30 dias',
-                responsible: ['João Silva', 'Ana Costa', 'Pedro Santos', 'Mariana Lima'][Math.floor(Math.random() * 4)],
-                area: 'Produtos Internacionais',
-                criticality: ['Alta', 'Média', 'Baixa'][Math.floor(Math.random() * 3)],
-                hasProblems: 'Não',
-                rating: (Math.random() * 2 + 3).toFixed(1),
-                lastReview: '2024-01-01'
-            });
         }
 
-        // History log
-        let history = [
-            { date: '2024-11-15 14:32', user: 'Admin', supplier: 'Folia Travel', action: 'Atualização', field: 'Telefone', change: '+54 11 4567-8900 → +54 11 4567-8901' },
-            { date: '2024-11-14 10:15', user: 'Admin', supplier: 'Peru Destinations', action: 'Atualização', field: 'Status', change: 'Em homologação → Ativo' },
-            { date: '2024-11-13 16:45', user: 'Admin', supplier: 'Spain Incoming', action: 'Criação', field: '-', change: 'Novo fornecedor adicionado' },
-            { date: '2024-11-12 09:20', user: 'Admin', supplier: 'France Voyages', action: 'Atualização', field: 'Status', change: 'Ativo → Inativo' },
-            { date: '2024-11-11 11:30', user: 'Admin', supplier: 'Chile Tours', action: 'Atualização', field: 'E-mail', change: 'info@chiletours.cl → reservas@chiletours.cl' }
-        ];
+        // Função para carregar dados do localStorage
+        function loadFromLocalStorage() {
+            try {
+                const savedSuppliers = localStorage.getItem(STORAGE_KEY);
+                const savedHistory = localStorage.getItem(HISTORY_KEY);
+                
+                if (savedSuppliers) {
+                    const parsed = JSON.parse(savedSuppliers);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        suppliers = parsed;
+                        console.log('✓ Dados carregados do localStorage:', suppliers.length, 'fornecedores');
+                    }
+                }
+                
+                if (savedHistory) {
+                    const parsedHistory = JSON.parse(savedHistory);
+                    if (Array.isArray(parsedHistory)) {
+                        history = parsedHistory;
+                    }
+                }
+                
+                // Atualiza a lista filtrada
+                filteredSuppliers = [...suppliers];
+                
+                return true;
+            } catch (e) {
+                console.error('Erro ao carregar dados:', e);
+                return false;
+            }
+        }
+
+        // Função para limpar dados salvos
+        function clearLocalStorage() {
+            if (confirm('Tem certeza que deseja resetar todos os dados para o padrão? Esta ação não pode ser desfeita.')) {
+                localStorage.removeItem(STORAGE_KEY);
+                localStorage.removeItem(HISTORY_KEY);
+                showToast('Dados resetados. Recarregando página...', 'success');
+                setTimeout(() => {
+                    location.reload();
+                }, 1500);
+            }
+        }
+
+        // Mostra indicador visual de salvamento
+        function showSaveIndicator() {
+            const indicator = document.getElementById('saveIndicator');
+            if (indicator) {
+                indicator.classList.add('show');
+                setTimeout(() => {
+                    indicator.classList.remove('show');
+                }, 2000);
+            }
+        }
+
+        // Atualiza informações de armazenamento na página admin
+        function updateStorageInfo() {
+            const countEl = document.getElementById('storageCount');
+            if (countEl) {
+                countEl.textContent = suppliers.length + ' fornecedores';
+            }
+        }
+
+        // ============================================
+        // DATA STORE - Dados padrão
+        // ============================================
+        let suppliers = [];
+        let history = [];
+        
+        // Dados padrão (usados se não houver dados salvos)
+        function getDefaultSuppliers() {
+            return [
+                {
+                    id: 1,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'Folia Travel',
+                    razaoSocial: 'Folia Travel Turismo Ltda',
+                    country: 'Argentina',
+                    cities: 'Buenos Aires, Mendoza, Bariloche',
+                    region: 'América do Sul',
+                    language: 'Espanhol',
+                    additionalLanguages: 'Português, Inglês',
+                    timezone: 'UTC-3',
+                    website: 'https://www.foliatravel.com.ar',
+                    status: 'Ativo',
+                    inclusionDate: '2023-01-15',
+                    contactName: 'María García',
+                    contactRole: 'Gerente Operacional',
+                    email: 'operaciones@foliatravel.com.ar',
+                    phone: '+54 11 4567-8901',
+                    hours: '09:00 - 18:00',
+                    is24h: 'Sim',
+                    emergencyContact: '+54 11 9999-8888',
+                    preferredContact: 'WhatsApp',
+                    responseTime: '2 horas',
+                    operationalNotes: 'Atendimento prioritário para grupos CVC',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher eletrônico CVC',
+                    requiresDocument: 'Não',
+                    documentType: '',
+                    serviceType: 'Receptivo Terrestre',
+                    mainServices: 'Transfer, City Tour, Excursões',
+                    complementaryServices: 'Guia multilíngue, Assistência 24h',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: 'Sem custo até 48h antes',
+                    noShowPolicy: '100% de cobrança',
+                    changesPolicy: 'Alterações gratuitas até 24h antes',
+                    childrenRules: 'CHD até 5 anos gratuito',
+                    tariffModel: 'Net',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento 30 dias',
+                    billingTerm: '30 dias',
+                    responsible: 'João Silva',
+                    area: 'Produtos Internacionais',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.5',
+                    lastReview: '2024-11-01'
+                },
+                {
+                    id: 2,
+                    torre: 'Internacional',
+                    type: 'DMC',
+                    name: 'Peru Destinations',
+                    razaoSocial: 'Peru Destinations SAC',
+                    country: 'Peru',
+                    cities: 'Lima, Cusco, Machu Picchu',
+                    region: 'América do Sul',
+                    language: 'Espanhol',
+                    additionalLanguages: 'Inglês, Português',
+                    timezone: 'UTC-5',
+                    website: 'https://www.perudestinations.com',
+                    status: 'Ativo',
+                    inclusionDate: '2022-06-20',
+                    contactName: 'Carlos Mendoza',
+                    contactRole: 'Diretor de Operações',
+                    email: 'carlos@perudestinations.com',
+                    phone: '+51 1 234-5678',
+                    hours: '08:00 - 17:00',
+                    is24h: 'Sim',
+                    emergencyContact: '+51 999-888-777',
+                    preferredContact: 'E-mail',
+                    responseTime: '4 horas',
+                    operationalNotes: '',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher CVC',
+                    requiresDocument: 'Sim',
+                    documentType: 'Lista de passageiros',
+                    serviceType: 'DMC Full Service',
+                    mainServices: 'Pacotes completos, Transfer, Hotéis, Excursões',
+                    complementaryServices: 'Trem para Machu Picchu, Guias especializados',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: 'Sem custo até 72h antes',
+                    noShowPolicy: '100% de cobrança',
+                    changesPolicy: 'Sujeito a disponibilidade',
+                    childrenRules: 'CHD até 2 anos gratuito',
+                    tariffModel: 'Comissionado',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '45 dias',
+                    responsible: 'Ana Costa',
+                    area: 'Produtos Internacionais',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.8',
+                    lastReview: '2024-10-15'
+                },
+                {
+                    id: 3,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'Chile Tours',
+                    razaoSocial: 'Chile Tours SpA',
+                    country: 'Chile',
+                    cities: 'Santiago, Valparaíso, Atacama',
+                    region: 'América do Sul',
+                    language: 'Espanhol',
+                    additionalLanguages: 'Inglês',
+                    timezone: 'UTC-4',
+                    website: 'https://www.chiletours.cl',
+                    status: 'Ativo',
+                    inclusionDate: '2023-03-10',
+                    contactName: 'Patricia Morales',
+                    contactRole: 'Coordenadora',
+                    email: 'reservas@chiletours.cl',
+                    phone: '+56 2 2345-6789',
+                    hours: '09:00 - 18:00',
+                    is24h: 'Não',
+                    emergencyContact: '+56 9 8765-4321',
+                    preferredContact: 'E-mail',
+                    responseTime: '6 horas',
+                    operationalNotes: '',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher eletrônico',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Tours',
+                    complementaryServices: '',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: 'Sem custo até 24h antes',
+                    noShowPolicy: '50% de cobrança',
+                    changesPolicy: 'Gratuito',
+                    tariffModel: 'Net',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: 'Pedro Santos',
+                    area: 'Produtos Internacionais',
+                    criticality: 'Média',
+                    hasProblems: 'Não',
+                    rating: '4.2',
+                    lastReview: '2024-09-20'
+                },
+                {
+                    id: 4,
+                    torre: 'Internacional',
+                    type: 'DMC',
+                    name: 'European Destinations',
+                    razaoSocial: 'European Destinations GmbH',
+                    country: 'Alemanha',
+                    cities: 'Berlim, Munique, Frankfurt',
+                    region: 'Europa',
+                    language: 'Alemão',
+                    additionalLanguages: 'Inglês, Português',
+                    timezone: 'UTC+1',
+                    website: 'https://www.europeandest.de',
+                    status: 'Ativo',
+                    inclusionDate: '2022-01-05',
+                    contactName: 'Hans Mueller',
+                    contactRole: 'Operations Manager',
+                    email: 'operations@europeandest.de',
+                    phone: '+49 30 1234567',
+                    hours: '08:00 - 17:00',
+                    is24h: 'Sim',
+                    emergencyContact: '+49 170 9876543',
+                    preferredContact: 'E-mail',
+                    responseTime: '24 horas',
+                    operationalNotes: 'Feriados alemães: escritório fechado',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher CVC',
+                    serviceType: 'DMC',
+                    mainServices: 'Pacotes, Transfer, Hotéis',
+                    complementaryServices: 'City tours, Guias',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: 'Conforme política hoteleira',
+                    noShowPolicy: '100% primeira noite',
+                    tariffModel: 'Net',
+                    currency: 'EUR',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: 'Mariana Lima',
+                    area: 'Produtos Europa',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.6',
+                    lastReview: '2024-11-10'
+                },
+                {
+                    id: 5,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'USA Travel Services',
+                    razaoSocial: 'USA Travel Services Inc',
+                    country: 'Estados Unidos',
+                    cities: 'Nova York, Miami, Orlando, Los Angeles',
+                    region: 'América do Norte',
+                    language: 'Inglês',
+                    additionalLanguages: 'Espanhol, Português',
+                    timezone: 'UTC-5',
+                    website: 'https://www.usatravelservices.com',
+                    status: 'Ativo',
+                    inclusionDate: '2021-08-15',
+                    contactName: 'John Smith',
+                    contactRole: 'Director',
+                    email: 'john@usatravelservices.com',
+                    phone: '+1 305 123-4567',
+                    hours: '09:00 - 18:00 EST',
+                    is24h: 'Sim',
+                    emergencyContact: '+1 305 999-8888',
+                    preferredContact: 'WhatsApp',
+                    responseTime: '2 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher eletrônico',
+                    serviceType: 'Receptivo Terrestre',
+                    mainServices: 'Transfer, Ingressos, Tours',
+                    complementaryServices: 'VIP Services',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: '48h sem custo',
+                    noShowPolicy: '100%',
+                    tariffModel: 'Net',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: 'Roberto Alves',
+                    area: 'Produtos Américas',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.7',
+                    lastReview: '2024-10-01'
+                },
+                {
+                    id: 6,
+                    torre: 'Internacional',
+                    type: 'Operador Local',
+                    name: 'Mexico Adventures',
+                    razaoSocial: 'Mexico Adventures SA de CV',
+                    country: 'México',
+                    cities: 'Cancún, Cidade do México, Playa del Carmen',
+                    region: 'América Central',
+                    language: 'Espanhol',
+                    additionalLanguages: 'Inglês',
+                    timezone: 'UTC-6',
+                    website: 'https://www.mexicoadventures.mx',
+                    status: 'Ativo',
+                    inclusionDate: '2023-05-20',
+                    contactName: 'Roberto Hernández',
+                    contactRole: 'Gerente',
+                    email: 'reservas@mexicoadventures.mx',
+                    phone: '+52 998 123-4567',
+                    hours: '08:00 - 20:00',
+                    is24h: 'Não',
+                    emergencyContact: '+52 998 999-1234',
+                    preferredContact: 'WhatsApp',
+                    responseTime: '4 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher CVC',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Excursões, Parques',
+                    complementaryServices: 'Mergulho, Snorkel',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: '24h sem custo',
+                    noShowPolicy: '100%',
+                    tariffModel: 'Net',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: 'Carla Mendes',
+                    area: 'Produtos Américas',
+                    criticality: 'Média',
+                    hasProblems: 'Não',
+                    rating: '4.3',
+                    lastReview: '2024-08-15'
+                },
+                {
+                    id: 7,
+                    torre: 'Internacional',
+                    type: 'DMC',
+                    name: 'Spain Incoming',
+                    razaoSocial: 'Spain Incoming SL',
+                    country: 'Espanha',
+                    cities: 'Madrid, Barcelona, Sevilha',
+                    region: 'Europa',
+                    language: 'Espanhol',
+                    additionalLanguages: 'Inglês, Português',
+                    timezone: 'UTC+1',
+                    website: 'https://www.spainincoming.es',
+                    status: 'Em homologação',
+                    inclusionDate: '2024-09-01',
+                    contactName: 'Carmen López',
+                    contactRole: 'Diretora Comercial',
+                    email: 'carmen@spainincoming.es',
+                    phone: '+34 91 234-5678',
+                    hours: '09:00 - 18:00',
+                    is24h: 'Não',
+                    emergencyContact: '+34 600 123-456',
+                    preferredContact: 'E-mail',
+                    responseTime: '8 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'A definir',
+                    serviceType: 'DMC',
+                    mainServices: 'Pacotes, Transfer, Hotéis',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: 'Em definição',
+                    tariffModel: 'Net',
+                    currency: 'EUR',
+                    paymentMethod: 'A definir',
+                    billingTerm: '',
+                    responsible: 'Fernanda Souza',
+                    area: 'Produtos Europa',
+                    criticality: 'Média',
+                    hasProblems: 'Não',
+                    rating: '',
+                    lastReview: '2024-11-15'
+                },
+                {
+                    id: 8,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'Portugal Incoming',
+                    razaoSocial: 'Portugal Incoming Lda',
+                    country: 'Portugal',
+                    cities: 'Lisboa, Porto, Algarve',
+                    region: 'Europa',
+                    language: 'Português',
+                    additionalLanguages: 'Inglês, Espanhol',
+                    timezone: 'UTC+0',
+                    website: 'https://www.portugalincoming.pt',
+                    status: 'Ativo',
+                    inclusionDate: '2022-11-10',
+                    contactName: 'António Silva',
+                    contactRole: 'Diretor Geral',
+                    email: 'antonio@portugalincoming.pt',
+                    phone: '+351 21 123-4567',
+                    hours: '09:00 - 18:00',
+                    is24h: 'Sim',
+                    emergencyContact: '+351 91 999-8888',
+                    preferredContact: 'WhatsApp',
+                    responseTime: '4 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher CVC',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Tours, Passeios',
+                    complementaryServices: 'Vinhos, Gastronomia',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: '48h sem custo',
+                    noShowPolicy: '100%',
+                    tariffModel: 'Net',
+                    currency: 'EUR',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: 'Lucas Oliveira',
+                    area: 'Produtos Europa',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.9',
+                    lastReview: '2024-10-20'
+                },
+                {
+                    id: 9,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'Italy Tours',
+                    razaoSocial: 'Italy Tours SRL',
+                    country: 'Itália',
+                    cities: 'Roma, Florença, Veneza, Milão',
+                    region: 'Europa',
+                    language: 'Italiano',
+                    additionalLanguages: 'Inglês',
+                    timezone: 'UTC+1',
+                    website: 'https://www.italytours.it',
+                    status: 'Ativo',
+                    inclusionDate: '2021-04-15',
+                    contactName: 'Marco Rossi',
+                    contactRole: 'Operations Manager',
+                    email: 'marco@italytours.it',
+                    phone: '+39 06 1234567',
+                    hours: '09:00 - 18:00',
+                    is24h: 'Não',
+                    emergencyContact: '+39 333 1234567',
+                    preferredContact: 'E-mail',
+                    responseTime: '6 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher eletrônico',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Tours, Ingressos',
+                    complementaryServices: 'Guias em português',
+                    handlesGroups: 'Sim',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: '72h sem custo',
+                    noShowPolicy: '100%',
+                    tariffModel: 'Net',
+                    currency: 'EUR',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '45 dias',
+                    responsible: 'Mariana Lima',
+                    area: 'Produtos Europa',
+                    criticality: 'Alta',
+                    hasProblems: 'Não',
+                    rating: '4.4',
+                    lastReview: '2024-09-10'
+                },
+                {
+                    id: 10,
+                    torre: 'Internacional',
+                    type: 'Receptivo',
+                    name: 'France Voyages',
+                    razaoSocial: 'France Voyages SARL',
+                    country: 'França',
+                    cities: 'Paris, Nice, Lyon',
+                    region: 'Europa',
+                    language: 'Francês',
+                    additionalLanguages: 'Inglês, Português',
+                    timezone: 'UTC+1',
+                    website: 'https://www.francevoyages.fr',
+                    status: 'Inativo',
+                    inclusionDate: '2020-06-01',
+                    contactName: 'Pierre Dupont',
+                    contactRole: 'Diretor',
+                    email: 'pierre@francevoyages.fr',
+                    phone: '+33 1 23456789',
+                    hours: '10:00 - 18:00',
+                    is24h: 'Não',
+                    emergencyContact: '',
+                    preferredContact: 'E-mail',
+                    responseTime: '24 horas',
+                    voucherAccepted: 'Sim',
+                    voucherType: 'Voucher CVC',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Tours',
+                    handlesGroups: 'Não',
+                    handlesFIT: 'Sim',
+                    cancellationPolicy: '48h',
+                    tariffModel: 'Net',
+                    currency: 'EUR',
+                    paymentMethod: 'Pré-pagamento',
+                    billingTerm: '',
+                    responsible: 'Mariana Lima',
+                    area: 'Produtos Europa',
+                    criticality: 'Baixa',
+                    hasProblems: 'Sim',
+                    rating: '3.2',
+                    lastReview: '2024-06-01'
+                }
+            ];
+        }
+        
+        function getDefaultHistory() {
+            return [
+                { date: '2024-11-15 14:32', user: 'Admin', supplier: 'Folia Travel', action: 'Atualização', field: 'Telefone', change: '+54 11 4567-8900 → +54 11 4567-8901' },
+                { date: '2024-11-14 10:15', user: 'Admin', supplier: 'Peru Destinations', action: 'Atualização', field: 'Status', change: 'Em homologação → Ativo' },
+                { date: '2024-11-13 16:45', user: 'Admin', supplier: 'Spain Incoming', action: 'Criação', field: '-', change: 'Novo fornecedor adicionado' },
+                { date: '2024-11-12 09:20', user: 'Admin', supplier: 'France Voyages', action: 'Atualização', field: 'Status', change: 'Ativo → Inativo' },
+                { date: '2024-11-11 11:30', user: 'Admin', supplier: 'Chile Tours', action: 'Atualização', field: 'E-mail', change: 'info@chiletours.cl → reservas@chiletours.cl' }
+            ];
+        }
+
+        // Gera fornecedores adicionais para completar a base
+        function generateAdditionalSuppliers(startId, count) {
+            const countries = ['Colômbia', 'Uruguai', 'Equador', 'Bolívia', 'Paraguai', 'Inglaterra', 'Irlanda', 'Holanda', 'Bélgica', 'Suíça', 'Áustria', 'Grécia', 'Turquia', 'Egito', 'África do Sul', 'Marrocos', 'Israel', 'Emirados Árabes', 'Tailândia', 'Japão', 'China', 'Austrália', 'Nova Zelândia', 'Canadá', 'Cuba', 'República Dominicana', 'Costa Rica', 'Panamá'];
+            const types = ['Receptivo', 'DMC', 'Operador Local'];
+            const statuses = ['Ativo', 'Ativo', 'Ativo', 'Ativo', 'Inativo', 'Em homologação', 'Pendente'];
+            const additionalSuppliers = [];
+            
+            for (let i = startId; i < startId + count; i++) {
+                const country = countries[Math.floor(Math.random() * countries.length)];
+                additionalSuppliers.push({
+                    id: i,
+                    torre: 'Internacional',
+                    type: types[Math.floor(Math.random() * types.length)],
+                    name: `Fornecedor ${country} ${i}`,
+                    razaoSocial: `Empresa ${country} ${i} Ltda`,
+                    country: country,
+                    cities: `Cidade Principal, Cidade Secundária`,
+                    region: country.includes('Europa') ? 'Europa' : 'Outras Regiões',
+                    language: 'Local',
+                    timezone: 'UTC',
+                    website: `https://www.fornecedor${i}.com`,
+                    status: statuses[Math.floor(Math.random() * statuses.length)],
+                    inclusionDate: '2023-01-01',
+                    contactName: `Contato ${i}`,
+                    contactRole: 'Gerente',
+                    email: `contato@fornecedor${i}.com`,
+                    phone: `+00 00 0000-0000`,
+                    hours: '09:00 - 18:00',
+                    is24h: Math.random() > 0.5 ? 'Sim' : 'Não',
+                    emergencyContact: Math.random() > 0.5 ? '+00 00 9999-9999' : '',
+                    preferredContact: ['E-mail', 'WhatsApp', 'Telefone'][Math.floor(Math.random() * 3)],
+                    responseTime: '24 horas',
+                    voucherAccepted: 'Sim',
+                    serviceType: 'Receptivo',
+                    mainServices: 'Transfer, Tours',
+                    handlesGroups: Math.random() > 0.3 ? 'Sim' : 'Não',
+                    handlesFIT: Math.random() > 0.2 ? 'Sim' : 'Não',
+                    tariffModel: 'Net',
+                    currency: 'USD',
+                    paymentMethod: 'Faturamento',
+                    billingTerm: '30 dias',
+                    responsible: ['João Silva', 'Ana Costa', 'Pedro Santos', 'Mariana Lima'][Math.floor(Math.random() * 4)],
+                    area: 'Produtos Internacionais',
+                    criticality: ['Alta', 'Média', 'Baixa'][Math.floor(Math.random() * 3)],
+                    hasProblems: 'Não',
+                    rating: (Math.random() * 2 + 3).toFixed(1),
+                    lastReview: '2024-01-01'
+                });
+            }
+            
+            return additionalSuppliers;
+        }
 
         // ============================================
         // APP STATE
         // ============================================
-        
         let currentPage = 'home';
         let currentSupplierPage = 1;
         const suppliersPerPage = 20;
-        let filteredSuppliers = [...suppliers];
+        let filteredSuppliers = [];
         let currentSupplierId = null;
         let currentDeleteId = null;
 
         // ============================================
         // UTILITIES
         // ============================================
-
         function showToast(message, type = 'default') {
             const container = document.getElementById('toastContainer');
             const toast = document.createElement('div');
@@ -3115,7 +2967,6 @@
                 <span>${message}</span>
             `;
             container.appendChild(toast);
-            
             setTimeout(() => toast.classList.add('show'), 10);
             setTimeout(() => {
                 toast.classList.remove('show');
@@ -3148,7 +2999,6 @@
         // ============================================
         // NAVIGATION
         // ============================================
-
         function navigateTo(page) {
             document.querySelectorAll('.page-section').forEach(p => p.classList.add('hidden'));
             const pageEl = document.getElementById(`page-${page}`);
@@ -3178,17 +3028,18 @@
                 renderHistoryTable();
             } else if (page === 'home') {
                 renderRecentSuppliers();
+            } else if (page === 'admin') {
+                updateStorageInfo();
             }
         }
 
         // ============================================
         // STATS
         // ============================================
-
         function updateStats() {
             const activeCount = suppliers.filter(s => s.status === 'Ativo').length;
             const countries = [...new Set(suppliers.map(s => s.country))];
-            const destinations = [...new Set(suppliers.flatMap(s => s.cities.split(',').map(c => c.trim())))];
+            const destinations = [...new Set(suppliers.flatMap(s => s.cities ? s.cities.split(',').map(c => c.trim()) : []))];
 
             document.getElementById('statSuppliers').textContent = suppliers.length;
             document.getElementById('statCountries').textContent = countries.length;
@@ -3200,7 +3051,6 @@
         // ============================================
         // SUPPLIERS TABLE
         // ============================================
-
         function filterSuppliers() {
             const search = document.getElementById('supplierSearch').value.toLowerCase();
             const country = document.getElementById('filterCountry').value;
@@ -3209,13 +3059,13 @@
             const is24h = document.getElementById('filter24h').value;
 
             filteredSuppliers = suppliers.filter(s => {
-                const matchSearch = !search || 
+                const matchSearch = !search ||
                     s.name.toLowerCase().includes(search) ||
-                    s.razaoSocial?.toLowerCase().includes(search) ||
+                    (s.razaoSocial && s.razaoSocial.toLowerCase().includes(search)) ||
                     s.country.toLowerCase().includes(search) ||
-                    s.cities.toLowerCase().includes(search) ||
-                    s.contactName?.toLowerCase().includes(search) ||
-                    s.email?.toLowerCase().includes(search);
+                    (s.cities && s.cities.toLowerCase().includes(search)) ||
+                    (s.contactName && s.contactName.toLowerCase().includes(search)) ||
+                    (s.email && s.email.toLowerCase().includes(search));
 
                 const matchCountry = !country || s.country === country;
                 const matchStatus = !status || s.status === status;
@@ -3284,8 +3134,8 @@
                     <td>${s.country}</td>
                     <td>
                         <div class="tags">
-                            ${s.cities.split(',').slice(0, 2).map(c => `<span class="tag">${c.trim()}</span>`).join('')}
-                            ${s.cities.split(',').length > 2 ? `<span class="tag">+${s.cities.split(',').length - 2}</span>` : ''}
+                            ${s.cities ? s.cities.split(',').slice(0, 2).map(c => `<span class="tag">${c.trim()}</span>`).join('') : ''}
+                            ${s.cities && s.cities.split(',').length > 2 ? `<span class="tag">+${s.cities.split(',').length - 2}</span>` : ''}
                         </div>
                     </td>
                     <td>
@@ -3321,8 +3171,8 @@
             const start = (currentSupplierPage - 1) * suppliersPerPage + 1;
             const end = Math.min(currentSupplierPage * suppliersPerPage, filteredSuppliers.length);
 
-            document.getElementById('paginationInfo').textContent = 
-                `Mostrando ${start}-${end} de ${filteredSuppliers.length}`;
+            document.getElementById('paginationInfo').textContent =
+                filteredSuppliers.length > 0 ? `Mostrando ${start}-${end} de ${filteredSuppliers.length}` : 'Nenhum resultado';
 
             const pagination = document.getElementById('pagination');
             let html = `
@@ -3341,7 +3191,7 @@
             }
 
             html += `
-                <button class="pagination-btn" onclick="goToPage(${currentSupplierPage + 1})" ${currentSupplierPage === totalPages ? 'disabled' : ''}>
+                <button class="pagination-btn" onclick="goToPage(${currentSupplierPage + 1})" ${currentSupplierPage === totalPages || totalPages === 0 ? 'disabled' : ''}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
                 </button>
             `;
@@ -3370,7 +3220,7 @@
                     <td>${s.country}</td>
                     <td>
                         <div class="tags">
-                            ${s.cities.split(',').slice(0, 2).map(c => `<span class="tag">${c.trim()}</span>`).join('')}
+                            ${s.cities ? s.cities.split(',').slice(0, 2).map(c => `<span class="tag">${c.trim()}</span>`).join('') : ''}
                         </div>
                     </td>
                     <td>
@@ -3390,17 +3240,19 @@
         // ============================================
         // DESTINATIONS TABLE
         // ============================================
-
         function renderDestinationsTable() {
             const destinations = {};
+
             suppliers.forEach(s => {
-                s.cities.split(',').forEach(city => {
-                    const trimmedCity = city.trim();
-                    if (!destinations[trimmedCity]) {
-                        destinations[trimmedCity] = { country: s.country, suppliers: [] };
-                    }
-                    destinations[trimmedCity].suppliers.push(s.name);
-                });
+                if (s.cities) {
+                    s.cities.split(',').forEach(city => {
+                        const trimmedCity = city.trim();
+                        if (!destinations[trimmedCity]) {
+                            destinations[trimmedCity] = { country: s.country, suppliers: [] };
+                        }
+                        destinations[trimmedCity].suppliers.push(s.name);
+                    });
+                }
             });
 
             const tbody = document.getElementById('destinationsTable');
@@ -3438,7 +3290,6 @@
         // ============================================
         // HISTORY TABLE
         // ============================================
-
         function renderHistoryTable() {
             const tbody = document.getElementById('historyTable');
             tbody.innerHTML = history.map(h => `
@@ -3456,6 +3307,7 @@
         function addToHistory(supplier, action, field, change) {
             const now = new Date();
             const date = `${now.toLocaleDateString('pt-BR')} ${now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+            
             history.unshift({
                 date,
                 user: 'Admin',
@@ -3464,17 +3316,22 @@
                 field,
                 change
             });
+            
+            // Limita o histórico a 100 entradas
+            if (history.length > 100) {
+                history = history.slice(0, 100);
+            }
         }
 
         // ============================================
         // VIEW SUPPLIER
         // ============================================
-
         function viewSupplier(id) {
             const supplier = suppliers.find(s => s.id === id);
             if (!supplier) return;
 
             currentSupplierId = id;
+
             document.getElementById('viewSupplierTitle').textContent = supplier.name;
 
             const content = document.getElementById('viewSupplierContent');
@@ -3520,7 +3377,7 @@
                             </div>
                             <div class="info-row">
                                 <span class="info-label">Cidades</span>
-                                <span class="info-value">${supplier.cities}</span>
+                                <span class="info-value">${formatValue(supplier.cities)}</span>
                             </div>
                             <div class="info-row">
                                 <span class="info-label">Website</span>
@@ -3697,6 +3554,7 @@
                 </div>
             `;
 
+            // Setup view tabs
             content.querySelectorAll('[data-view-tab]').forEach(tab => {
                 tab.addEventListener('click', () => {
                     content.querySelectorAll('[data-view-tab]').forEach(t => t.classList.remove('active'));
@@ -3718,13 +3576,13 @@
         // ============================================
         // ADD/EDIT SUPPLIER
         // ============================================
-
         function openAddSupplier() {
             currentSupplierId = null;
             document.getElementById('supplierModalTitle').textContent = 'Adicionar Fornecedor';
             document.getElementById('supplierForm').reset();
             document.getElementById('supplierId').value = '';
-            
+
+            // Reset tabs
             document.querySelectorAll('#supplierModal .tab').forEach((t, i) => {
                 t.classList.toggle('active', i === 0);
             });
@@ -3743,6 +3601,7 @@
             document.getElementById('supplierModalTitle').textContent = 'Editar Fornecedor';
             document.getElementById('supplierId').value = id;
 
+            // Populate form fields
             document.getElementById('formName').value = supplier.name || '';
             document.getElementById('formRazaoSocial').value = supplier.razaoSocial || '';
             document.getElementById('formType').value = supplier.type || '';
@@ -3753,6 +3612,7 @@
             document.getElementById('formWebsite').value = supplier.website || '';
             document.getElementById('formLanguage').value = supplier.language || '';
             document.getElementById('formTimezone').value = supplier.timezone || '';
+
             document.getElementById('formContactName').value = supplier.contactName || '';
             document.getElementById('formContactRole').value = supplier.contactRole || '';
             document.getElementById('formEmail').value = supplier.email || '';
@@ -3762,17 +3622,20 @@
             document.getElementById('formEmergency').value = supplier.emergencyContact || '';
             document.getElementById('formPreferredContact').value = supplier.preferredContact || '';
             document.getElementById('formResponseTime').value = supplier.responseTime || '';
+
             document.getElementById('formServiceType').value = supplier.serviceType || '';
             document.getElementById('formMainServices').value = supplier.mainServices || '';
             document.getElementById('formComplementaryServices').value = supplier.complementaryServices || '';
             document.getElementById('formFIT').value = supplier.handlesFIT || '';
             document.getElementById('formGroups').value = supplier.handlesGroups || '';
+
             document.getElementById('formVoucher').value = supplier.voucherAccepted || '';
             document.getElementById('formVoucherType').value = supplier.voucherType || '';
             document.getElementById('formCancellation').value = supplier.cancellationPolicy || '';
             document.getElementById('formNoShow').value = supplier.noShowPolicy || '';
             document.getElementById('formChanges').value = supplier.changesPolicy || '';
             document.getElementById('formOperationalNotes').value = supplier.operationalNotes || '';
+
             document.getElementById('formTariffModel').value = supplier.tariffModel || '';
             document.getElementById('formCurrency').value = supplier.currency || '';
             document.getElementById('formPayment').value = supplier.paymentMethod || '';
@@ -3781,6 +3644,7 @@
             document.getElementById('formArea').value = supplier.area || '';
             document.getElementById('formCommercialNotes').value = supplier.commercialNotes || '';
 
+            // Reset tabs
             document.querySelectorAll('#supplierModal .tab').forEach((t, i) => {
                 t.classList.toggle('active', i === 0);
             });
@@ -3792,6 +3656,7 @@
             openModal('supplierModal');
         }
 
+        // ⭐ FUNÇÃO MODIFICADA - Salva no localStorage
         function saveSupplier() {
             const form = document.getElementById('supplierForm');
             if (!form.checkValidity()) {
@@ -3843,6 +3708,7 @@
             };
 
             if (id) {
+                // Update existing
                 const index = suppliers.findIndex(s => s.id === parseInt(id));
                 if (index !== -1) {
                     suppliers[index] = { ...suppliers[index], ...supplierData };
@@ -3850,16 +3716,21 @@
                     showToast('Fornecedor atualizado com sucesso', 'success');
                 }
             } else {
-                const newId = Math.max(...suppliers.map(s => s.id)) + 1;
+                // Add new
+                const newId = suppliers.length > 0 ? Math.max(...suppliers.map(s => s.id)) + 1 : 1;
                 suppliers.push({ id: newId, ...supplierData });
                 addToHistory(supplierData.name, 'Criação', '-', 'Novo fornecedor adicionado');
                 showToast('Fornecedor adicionado com sucesso', 'success');
             }
 
+            // ⭐ SALVA NO LOCALSTORAGE
+            saveToLocalStorage();
+
             closeModal('supplierModal');
             filteredSuppliers = [...suppliers];
             updateStats();
-            
+            initCountryFilter(); // Atualiza filtro de países
+
             if (currentPage === 'suppliers') {
                 renderSuppliersTable();
             } else if (currentPage === 'home') {
@@ -3870,17 +3741,18 @@
         // ============================================
         // DELETE SUPPLIER
         // ============================================
-
         function confirmDelete(id) {
             const supplier = suppliers.find(s => s.id === id);
             if (!supplier) return;
 
             currentDeleteId = id;
-            document.getElementById('deleteConfirmMessage').textContent = 
+            document.getElementById('deleteConfirmMessage').textContent =
                 `Esta ação removerá "${supplier.name}" da base de dados. Esta ação não pode ser desfeita.`;
+
             openModal('confirmDeleteModal');
         }
 
+        // ⭐ FUNÇÃO MODIFICADA - Salva no localStorage
         function deleteSupplier() {
             if (!currentDeleteId) return;
 
@@ -3891,13 +3763,16 @@
             filteredSuppliers = filteredSuppliers.filter(s => s.id !== currentDeleteId);
 
             addToHistory(supplierName, 'Exclusão', '-', 'Fornecedor removido');
-            showToast('Fornecedor excluído com sucesso', 'success');
 
+            // ⭐ SALVA NO LOCALSTORAGE
+            saveToLocalStorage();
+
+            showToast('Fornecedor excluído com sucesso', 'success');
             closeModal('confirmDeleteModal');
             closeModal('viewSupplierModal');
-            
             updateStats();
-            
+            initCountryFilter(); // Atualiza filtro de países
+
             if (currentPage === 'suppliers') {
                 renderSuppliersTable();
             } else if (currentPage === 'home') {
@@ -3910,7 +3785,6 @@
         // ============================================
         // IMPORT
         // ============================================
-
         function setupImport() {
             const fileUpload = document.getElementById('fileUpload');
             const fileInput = document.getElementById('fileInput');
@@ -3950,33 +3824,45 @@
                 return;
             }
 
+            // Simulate processing
             setTimeout(() => {
                 const preview = document.getElementById('importPreview');
                 preview.classList.remove('hidden');
 
-                document.getElementById('importTotal').textContent = '292';
-                document.getElementById('importValid').textContent = '278';
-                document.getElementById('importUpdates').textContent = '9';
-                document.getElementById('importErrors').textContent = '5';
+                document.getElementById('importTotal').textContent = '50';
+                document.getElementById('importValid').textContent = '45';
+                document.getElementById('importUpdates').textContent = '3';
+                document.getElementById('importErrors').textContent = '2';
 
                 document.getElementById('confirmImportBtn').classList.remove('hidden');
             }, 500);
         }
 
+        // ⭐ FUNÇÃO MODIFICADA - Salva no localStorage
         function confirmImport() {
+            // Simula importação de alguns fornecedores
+            const newSuppliers = generateAdditionalSuppliers(suppliers.length + 1, 10);
+            suppliers = [...suppliers, ...newSuppliers];
+            filteredSuppliers = [...suppliers];
+            
+            // ⭐ SALVA NO LOCALSTORAGE
+            saveToLocalStorage();
+            
+            addToHistory('Sistema', 'Importação', '-', `${newSuppliers.length} registros importados`);
             showToast('Importação realizada com sucesso', 'success');
-            addToHistory('Sistema', 'Importação', '-', '292 registros importados');
+            
             closeModal('importModal');
-
             document.getElementById('importPreview').classList.add('hidden');
             document.getElementById('confirmImportBtn').classList.add('hidden');
             document.getElementById('fileInput').value = '';
+            
+            updateStats();
+            initCountryFilter();
         }
 
         // ============================================
         // EXPORT
         // ============================================
-
         function exportData() {
             const headers = ['Nome', 'Tipo', 'País', 'Cidades', 'Status', 'Contato', 'E-mail', 'Telefone'];
             const rows = filteredSuppliers.map(s => [
@@ -4007,7 +3893,6 @@
         // ============================================
         // AI ASSISTANT
         // ============================================
-
         function setupAIAssistant() {
             const btn = document.getElementById('aiAssistantBtn');
             const panel = document.getElementById('aiAssistantPanel');
@@ -4046,10 +3931,15 @@
         // ============================================
         // INITIALIZE
         // ============================================
-
         function initCountryFilter() {
             const countries = [...new Set(suppliers.map(s => s.country))].sort();
             const select = document.getElementById('filterCountry');
+            
+            // Limpa opções existentes (mantém a primeira)
+            while (select.options.length > 1) {
+                select.remove(1);
+            }
+            
             countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country;
@@ -4059,6 +3949,23 @@
         }
 
         function init() {
+            // ⭐ CARREGA DADOS DO LOCALSTORAGE PRIMEIRO
+            const hasStoredData = loadFromLocalStorage();
+            
+            // Se não houver dados salvos, carrega os padrões
+            if (!hasStoredData || suppliers.length === 0) {
+                console.log('Carregando dados padrão...');
+                suppliers = getDefaultSuppliers();
+                // Adiciona mais fornecedores para completar a base
+                const additionalSuppliers = generateAdditionalSuppliers(11, 282);
+                suppliers = [...suppliers, ...additionalSuppliers];
+                history = getDefaultHistory();
+                filteredSuppliers = [...suppliers];
+                
+                // Salva os dados iniciais
+                saveToLocalStorage();
+            }
+
             // Navigation
             document.querySelectorAll('[data-page]').forEach(el => {
                 el.addEventListener('click', (e) => {
@@ -4124,6 +4031,12 @@
             // Confirm delete
             document.getElementById('confirmDeleteBtn').addEventListener('click', deleteSupplier);
 
+            // ⭐ NOVO - Botão de reset
+            const resetBtn = document.getElementById('resetDataBtn');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', clearLocalStorage);
+            }
+
             // Search buttons
             document.getElementById('searchBtn').addEventListener('click', filterSuppliers);
             document.getElementById('supplierSearch').addEventListener('keypress', (e) => {
@@ -4136,6 +4049,7 @@
                 navigateTo('suppliers');
                 filterSuppliers();
             });
+
             document.getElementById('homeSearch').addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
                     const search = document.getElementById('homeSearch').value;
@@ -4172,6 +4086,8 @@
 
             // Start on home page
             navigateTo('home');
+            
+            console.log('✓ Portal inicializado com', suppliers.length, 'fornecedores');
         }
 
         // Run initialization
